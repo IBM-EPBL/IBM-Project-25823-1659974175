@@ -1,0 +1,183 @@
+/* @import url('https://www.google.com/search?q=university+of+toronto&rlz=1C1VDKB_enIN1018IN1018&sxsrf=ALiCzsY4Zaz1OCqJ3_PcAT73dVWIv7wgjA:1668078736675&source=lnms&tbm=isch&sa=X&ved=2ahUKEwjk7bnEvaP7AhXY_DgGHb1CA3MQ_AUoAXoECAEQAw&biw=2133&bih=1118&dpr=0.9#imgrc=bkTtGoNYPW88aM'); */
+
+*{
+
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins';
+}
+img{
+  opacity: 0.5;
+}
+body{
+
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+  background: linear-gradient(140deg, rgb(45, 192, 211), rgb(202, 33, 33));
+
+}
+
+.container{
+  max-width: 700px;
+  width: 100%;
+  background-color: white;
+  padding: 25px 30px;
+  border-radius: 8px;
+  box-shadow: 0 5px 10px rgb(6, 7, 6);
+}
+
+.container .title{
+  font-size: 25px;
+  font-weight: bold;
+  position: relative;
+}
+
+.container .title::before{
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  height: 5px;
+  width: 30px;
+  border-radius: 8px;
+  background: linear-gradient(135deg, rgb(145, 243, 243) rgb(238, 238, 112));
+}
+
+.container form .user-details{
+
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin: 20px 0 12px 0;
+
+}
+
+form .user-details .input-box{
+
+  margin-bottom: 15px;
+  width: calc(100%/2-20px);
+}
+
+form .input-box span.deatils{
+
+  display: block;
+  font-weight: bold;
+  margin-bottom: 7px;
+}
+
+.user-details .input-box input{
+
+  height: 45px;
+  width: 100%;
+  outline: none;
+  font-size: 15px;
+  border-radius: 7px;
+  padding-left: 5px;
+  border: 1px solid rgb(121, 117, 122);
+  border-bottom-width: 2px;
+  transition: all 0.3s ease;
+}
+
+.user-details .input-box input:focus,
+.user-details .input-box input:valid{
+
+  border-color: rgb(227, 16, 235);
+}
+
+
+form .gender-details .gender-title{
+
+  font-size: 20px;
+  font-weight: bold;
+}
+
+form .category{
+
+  display: flex;
+  width: 80%;
+  margin: 15px 0;
+  justify-content: space-between;
+}
+
+form .category label {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+}
+
+form .category label .dot{
+
+  height: 18px;
+  width: 18px;
+  border-radius: 15px;
+  margin-right: 10px;
+  background: rgb(166, 163, 167);
+  border: 5px solid transparent;
+  transition: all 0.3s ease;
+}
+
+#dot-1:checked ~ .category label .one,
+#dot-2:checked ~ .category label .two,
+#dot-3:checked ~ .category label .three{
+
+  background: rgb(253, 2, 2);
+  border-color: grey
+}
+
+form input[type="radio"]{
+  display: none;
+}
+
+form .button{
+  height: 50px;
+  margin: 35px 0;
+}
+
+form .button input{
+
+  height: 100%;
+  width: 100%;
+  border-radius: 10px;
+  border: none;
+  color: rgb(247, 245, 248);
+  font-size: 20px;
+  font-weight: bold;
+  letter-spacing: 1px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  background: linear-gradient(135deg, rgb(250, 109, 109) ,rgb(249, 89, 255));
+
+}
+
+form .button input:hover{
+
+  background: linear-gradient(135deg,  rgb(235, 85, 85) ,rgb(220, 87, 224));
+}
+
+.results{
+  display: inline-block;
+  width: auto;
+  height: 429px;
+  line-height: 400px;
+  text-align: center;
+}
+
+.danger{
+    color: #ff0000;
+}
+
+.safe{
+    color: green;
+}
+
+.gif{
+	width: 25%;
+}
+
+.gif1{
+	width: 40%;
+}
