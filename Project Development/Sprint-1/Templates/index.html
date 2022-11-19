@@ -1,0 +1,113 @@
+
+
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Responsive Registration Form </title>
+    <link rel="stylesheet" href="style.css">
+   </head>
+   <style type="text/css">
+	
+    h1,h2{
+      font-family: 'Raleway', sans-serif;
+      color: black;
+    }
+    h2,h1,form,p,b{
+      text-align: left;
+      color: black;
+    }
+    label,p,b{
+      font-family: 'Noto Sans HK', sans-serif;
+      color: black;
+    }
+    .elements{
+      padding-top: 2px;
+    }
+    div.background {
+
+      /* background: url("C:\Users\santosh\OneDrive\Desktop\toro.jpg.crdownload") repeat; */
+      background-size: auto;
+      background-color: rgb(42, 39, 234);
+      border: 2px solid black;
+    }
+
+    div.transbox {
+      margin: 30px;
+      background-color: #ffffff;
+      border: 1px solid black;
+      opacity: 0.6;
+    }
+
+    div.transbox p {
+      margin: 5%;
+      font-weight: bold;
+      color: #000000;
+    }
+    div.gallery{
+      margin: 5px;
+      border: 1px solid #ccc;
+      float: left;
+      width:180px;
+
+    }
+
+    
+    
+  
+  </style>
+  <body>
+    <div class="background">
+      <div class="transbox">
+        <h3 style="font-size: 4rem; text-decoration-thickness: auto; position: -webkit-sticky; text-align: center;" >University Admission Predictor</h3>
+      </div>
+    </div>
+    <div class="gallery">
+        <img src ="static/images/bg.jpg" alt="Cinque Terre" width="1900" height="1600" />
+      </a>
+    </div>
+    
+    
+  
+    
+    <h1 style="color: #ccc; font-size: 3rem;  text-decoration-style: auto; position: sticky;   text-align: center; text-decoration-color: black;">Admission Counselling</h1>
+    <br>
+    <br>
+    <p style=" color:#ffffff; font-size: 2rem; font-family: 'Raleway', sans-serif; text-align: center;"> <strong> ABOUT </strong></p>
+    <p style=" color:white; font-size:  2rem; font-family: 'Raleway', sans-serif; text-align: center;">Enter your details to predict whether you'll get an admission or not.</p>
+  
+    <form action="/predict" method="POST" class="elements" style="font-size: 1rem;">
+      <p style=" color:#ffffff;  font-size: 2rem; font-family: 'Raleway', sans-serif; "> <strong> DETAILS </strong></p>
+      <p style="color:whitesmoke;font-size: 1.5rem; font-style: inherit; font-weight: bolder;" class="elements">GRE SCORE</p>
+      <p><input type="text" name="gre" placeholder="Score range 0-340" style=" border-radius: 200px; height: 30px; width: 30%;" required></p>
+      <p style="color:#ffffff;font-size: 1.5rem; font-style: initial; font-weight: bolder;" class="elements">TOEFL SCORE</p>
+      <p><input type="text; range" name="tofl" placeholder="Score range 0-120" min="50" max="120" style=" border-radius: 20px; height: 30px; width: 30%;" required></p>
+      <p style="color:#ffffff; font-size: 1.5rem; font-style: inherit; font-weight: bolder;"class="elements">UNIVERSITY RATING</p></style>
+      <select name="rating" style=" border-radius: 100px; height: 30px; width: 30%;" required>
+        <option value="1">1</option>
+        <option value="2">2</option>
+        <option value="3">3</option>
+        <option value="4">4</option>
+        <option value="5">5</option>
+          </select>
+      <br>
+      <p style=" color:#ffffff;font-size:  1.5rem; font-style: inherit; font-weight: bolder;" class="elements">SOP</p>
+      <p><input type="text" name="sop" placeholder="Score range 0-5" style=" border-radius: 20px; height: 30px; width: 30%;" required></p>
+      <p style=" color:#ffffff;font-size: 1.5rem; font-style: inherit; font-weight: bolder;" class="elements">LOR</p>
+      <p><input type="text" name="lor" placeholder="Score range 0-5" style=" border-radius: 20px; height: 30px; width: 30%;" required></p>
+      <p style=" color:#ffffff;font-size: 1.5rem; font-style: inherit; font-weight: bolder;"class="elements">CGPA</p>
+      <p><input type="text" name="cgpa" placeholder="Score range 0-10" style=" border-radius: 20px; height: 30px; width: 30%;" required></p>
+      <p class="elements" style=" color:#ffffff;font-size: 1.5rem; font-style: inherit; font-weight: bolder;">RESEARCH</p>
+      <select name="research" style=" border-radius: 100px; height: 30px; width: 30%;" required>
+        <option value="Yes">Yes</option>
+        <option value="No">No</option>
+          </select>
+          <br>
+          <br>
+          <br>
+          <input type="submit" value="Submit" style=" border-radius: 40rem; height: 35px; width:15%; margin-left:6%;"></p> 
+                         
+          
+</body>
+</html>
